@@ -1,16 +1,30 @@
-/* Now i need to add fonts to the header elements, 3 different ones. And import in different ways different fonts. Some from google, some the default ones. Got to try 8 different ones.
- */
+/* Space listed items and put numbers on some of them, change the border color of the divs (probably independently) */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     border: 2px solid blue;
 }
+body {
+    background-color: hsl(13, 100%, 95%);
+}
+body p, div{
+    font-size: 20px;
+
+}
 
 img {
-
     display: block;
-    margin: 10px auto 10px auto;
-    height: auto;
-    width: 400px;
+    margin: 10px auto 50px auto;
+    height: 400px;
+    width: auto;
     border: 5px solid hsl(274, 100%, 40%);
     border-radius: 20px;
 }
@@ -19,7 +33,10 @@ h2,
 h3 {
     font-weight: 700;
     font-size: 24px;
-    
+
+}
+h1 {
+    margin-bottom: 50px;
 }
 h2 {
     font-size: 20px;
@@ -29,32 +46,39 @@ h3 {
     color: #ffffff;
     text-align: center;
     padding: 5px;
-    font-size: 16px;
-    background-color: #696969;
+    font-size: 25px;
+    /* background-color: rgb(233, 202, 22); */
+    background-color: hsl(26, 100%, 57%);
     border: 3px solid black;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
-ul.unordered {
-    list-style-type: square;
-}
-li {
-    display: list-item;
-    margin-lefT: 1em;
-}
+
 .structure-div {
-    background-color: lightblue;
     width: 80%;
-    border: 2px solid black;
-    margin: 5px;
+    border: 2px solid rgb(16, 125, 132);
+    margin: 0px auto 20px auto;
+    padding: 10px 50px 10px 50px;
+}
+#index-div li {
+    font-size: 100px;
+ }
+#index-div {
+    width: 1000px;
+    height: 500px;
+    padding: 100px;
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 1000px 500px;
+
 }
 #description {
-    background-color: olivedrab;
+    background-color: hsl(174, 73%, 50%);
 }
 #ingredients {
     background-color: palegoldenrod;
 }
 #steps {
-    background-color: darksalmon;
+    background-color: hsl(265, 49%, 37%);
 }
 .first-title {
     text-align: center;
@@ -63,19 +87,100 @@ li {
     padding-bottom: 10px;
     border-bottom: 3px solid black;
 }
-
+.font {
+    
+}
 .font-one {
-    
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
 }
-.font- {
-    
+.font-two {
+    font-family: 'Architecs Daughter', cursive;
 }
-.font- {
-    
+.font-three {
+    font-family: 'Poppins', sans-serif;
 }
-.font- {
-    
+.font-four {
+    font-family: 'Press Start 2P', cursive;
 }
-.font- {
-    
+.font-five {
+    font-family: 'Permanent Marker', cursive;
+}
+.font-six {
+    font-family: 'Parisienne', cursive;
+}
+.font-seven {
+    font-family: 'Pacifico', cursive;
+}
+.font-eight {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+
+.color-one {
+    color: #CC00CC;
+}
+.color-two {
+    color: hsl(129, 83%, 27%);
+}
+.color-three {
+    color: #808080
+}
+.color-four {
+    color: rgb(0, 102, 102);
+}
+.color-five {
+    color: rgba(204, 104, 0);
+}
+.color-six {
+    color: hsl(157, 100%, 50%);
+}
+.color-seven {
+    color: rgb(51, 204, 255);
+}
+.color-eight {
+    color: hsl(48, 100%, 45%);
+}
+
+/* lists */
+.li-title {
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+    margin-left: 0.1em;
+}
+
+ul.unordered {
+    /* list-style-type: disc; */
+    list-style-position: inside;
+}
+ol.ordered {
+    list-style-position: inside;
+}
+li {
+    display: list-item;
+    margin-left: 0.5em;
+}
+li:not(:last-child) {
+    margin-bottom: 10px;
+}
+/* div.index li:not(:last-child) {n */
+/*     margin-bottom: 250px; */
+/* } */
+.ulist-type-one {
+    list-style-type: square;
+}
+.ulist-type-two {
+    list-style-type: disc;
+}
+.ulist-type-three {
+    list-style-type: circle;
+}
+.olist-type-one {
+    list-style-type: bengali;
+}
+.olist-type-two {
+    list-style-type: cjk-heavenly-stem;
+}
+.olist-type-three {
+    list-style-type: hebrew;
 }
