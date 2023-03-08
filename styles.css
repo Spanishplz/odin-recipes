@@ -13,7 +13,7 @@ img {
 }
 
 h1 {
-    font-family: "Courier New", Arial;
+    font-family: "Climate Crisis", "Courier New", Arial;
     font-size: 40px;
     text-align: center;
     border: 2px solid black;
@@ -23,7 +23,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    font-family: "Brush Script MT", Arial;
+    font-family: "Rubik Iso", Arial;
     background-color: black;
     color: white;
     text-align: center;
@@ -40,7 +40,7 @@ figcaption {
 }
 
 p {
-    font-family: "Climate Crisis", Arial;
+    font-family: Arial;
     background-color: lightblue;
     font-size: 20px;
     padding: 5px;
